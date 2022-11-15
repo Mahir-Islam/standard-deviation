@@ -1,0 +1,66 @@
+body {
+	background-color: #ccc;
+	font-family: MathJ;
+	image-rendering: auto;
+	image-rendering: crisp-edges;
+	image-rendering: pixelated;
+}
+
+@font-face {
+	font-family: MathJ;
+	src: url(fonts/MathJax_Main-Regular.otf);
+}
+
+.wrapper{
+	background-color: #ddd;
+	width: 95%;
+	margin: 0 auto;
+}
+
+.table,.ans {
+	background-color: #aaa;
+	margin: 0 auto;
+	width: 98%;
+	border: #888 5px dotted;
+	border-radius: 10px;
+}
+
+.table th{
+	font-family: MathJ;
+	width: 25%;
+	font-size: 2vw;
+}
+.table input {
+	font-family: MathJ;
+	width: 97%;
+	font-size: 2vw;
+	margin: 0 auto;
+	border: #888 1px dotted;
+	border-radius: 10px;
+}
+
+#p,#n,#e {
+	width: 100%;
+	font-family: MathJ;
+	border: none;
+	font-weight: bold;
+	background-color: red;
+	color: #fff;
+}
+
+#p:hover, #n:hover ,#e:hover{opacity: 0.5;}
+#p:active, #n:active #e:active{opacity: 0.25;}
+
+
+.ans td {
+	font-size: 3vw;
+	font-weight: bold;
+}
+
+#mean,#variance,#sum,#sdev,#sxs,#lenf {
+	width: 90%;
+	font-size: 2vw;
+	font-family: MathJ;
+	border: #888 1px dotted;
+	border-radius: 10px;
+}

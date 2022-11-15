@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+
+<head>
+
+<meta charset="utf-8"> <meta name="viewport" content="width=device-width">
+
+<title>Standard Deviation</title>
+<meta charset = "utf-8"/>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script type="text/javascript" src="app.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="wrapper" align="center">
+<h1 style="font-size: 50px; margin: 0 auto; font-size: 5vw;"><strong>Standard deviation calculator</strong></h1>
+
+<div style="font-size:40px; margin: 0 auto; font-size: 5vw;">\begin{equation}
+
+σ=\sqrt{\frac{Σ(x-\bar{x})^2}{n}}
+
+ = \sqrt{ \frac{Σx^2}{Σx}-\bar{x}^2 } 
+
+\end{equation}</div>
+
+<div align="center"> <!-- Table 1 -->
+<table class="table" id="list"><tbody>
+
+<tr>
+	<th align="left">Value</th>
+	<th align="left">Frequency</th>
+	<th><input type="submit" id="p" name="add" value="New column" onclick="modify(1);"></input></th>
+	<th><input type="submit" id="n" name="add" value="Cancel" onclick="modify(2);"></input></th>
+</tr>
+
+<tr>
+	<td><input class="val" type="text"></input></td>
+	<td><input class="freq" type="text"></input></td>
+	<td><input id="e" type="submit" value="Calculate" onclick="calc();"></td>
+	<td><input id="e" type="submit" value="Made by Mahir" onclick="alert('For more, go to github.com/mahv');"></td>
+</tr>
+
+</tbody></table></div>
+
+<div align="center"><table class="ans"><tbody>
+	
+<tr> <td>Σx</td><td><input id="sum" type="text"></input></td>
+	 <td>n</td><td><input id="lenf" type="text"></input></td></tr>
+
+<tr> <td>x&#772;</td><td><input id="mean" type="text"></input></td>
+	 <td>σ<sup>2</sup></td><td><input id="variance" type="text"></input></td></tr>
+
+<tr> <td>Σx<sup>2</sup></td><td><input id="sxs" type="text"></input></td>
+	 <td>σ</td><td><input id="sdev" type="text"></input></td></tr>
+
+</tbody></table></div>
+
+</div> </body>
+
